@@ -13,6 +13,12 @@ config = {
     'system_plugins': ['tiddlywebplugins.xml'],
 }
 
+This plugin uses pyxml which when run from cherrypy on OSX may need
+an environment variable setting at the top of tiddlywebconfig.py:
+
+import os
+os.environ['PY_USE_XMLPLUS'] = '1'
+
 Created by Paul Downey, <psd@osmosoft.com>.
 http://blog.whatfettle.com
 
