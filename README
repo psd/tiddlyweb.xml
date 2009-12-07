@@ -1,0 +1,19 @@
+Exchange TiddlyWeb resources using the XML representation.
+
+XML is returned following a request for the text/xml and application/xml media types,
+or by appending a .xml suffix before the query portion of a TiddlyWeb URI.
+
+Resources may be created and modified by sending XML to a TiddlyWeb
+recipe, bag or tiddler URI using an XML media type.
+
+To use this code install the package and and add 'tiddlywebplugins.xml'
+to system_plugins in the tiddlywebconfig.py of your TiddlyWeb instance:
+
+config = {
+    'system_plugins': ['tiddlywebplugins.xml'],
+}
+
+Created by Paul Downey, <psd@osmosoft.com>.
+http://blog.whatfettle.com
+
+This package is licensed under the same terms as TiddlyWeb itself.
